@@ -8513,3 +8513,77 @@ section,
 
 
 
+/* Ensure Final CTA is visible on all devices */
+.final-cta {
+  display: block; /* Ensure it's not hidden */
+  padding: 30px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  background: #f5f5f5; /* optional for better visibility */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.final-cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.final-cta p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  justify-content: center;
+  gap: 15px; /* space between buttons */
+}
+
+.cta-actions .btn-primary,
+.cta-actions .btn-secondary {
+  padding: 12px 25px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.cta-actions .btn-primary:hover,
+.cta-actions .btn-secondary:hover {
+  transform: scale(1.05);
+}
+
+.urgency-banner {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #d9534f; /* attention color */
+  gap: 8px;
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 768px) {
+  .final-cta h2 {
+    font-size: 1.5rem;
+  }
+  .final-cta p {
+    font-size: 0.95rem;
+  }
+  .cta-actions {
+    flex-direction: column; /* buttons stack vertically */
+  }
+  .cta-actions a {
+    width: 100%; /* full-width buttons */
+  }
+  .urgency-banner {
+    font-size: 0.85rem;
+    flex-direction: column;
+    text-align: center;
+  }
+}
