@@ -1007,6 +1007,57 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# Book Form
+--------------------------------------------------------------*/
+
+
+/* Button Base Style */
+.btn-book {
+  display: inline-block;
+  background: linear-gradient(135deg, #25D366, #128C7E); /* WhatsApp colors */
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Hover Effect */
+.btn-book:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Animated Glow */
+.btn-book::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.btn-book:hover::before {
+  opacity: 1;
+  transform: rotate(45deg) scale(1.2);
+}
+
+/* Optional: Add subtle hover text effect */
+.btn-book span {
+  position: relative;
+  z-index: 1;
+}
 
 /*--------------------------------------------------------------
 # Why Us Section
