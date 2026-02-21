@@ -1027,7 +1027,7 @@ section,
 
 /* Button Style */
 .btn-book {
-  background-color: #1794BA; /* your requested color */
+  background-color: #0a5c74; /* your requested color */
   color: #fff;
   font-weight: bold;
   font-size: 18px;
@@ -8639,7 +8639,7 @@ section,
   bottom: 70px; /* Adjust if you also have scroll-to-top button */
   width: 50px;
   height: 50px;
-  background-color: #1794BA;
+  background-color: #0a5c74;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -8706,3 +8706,19 @@ section,
   color: #fff !important;
 }
 
+
+/*--------------------------------------------------------------
+# Hamburger Button 
+--------------------------------------------------------------*/
+
+.hamburger-btn {
+  background: transparent;
+  border: 0;
+  padding: 4px;
+  font-size: 22px;   /* controls icon size */
+  line-height: 1;
+  color: inherit;    /* matches navbar text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
